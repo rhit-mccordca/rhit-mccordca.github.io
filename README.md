@@ -1,1 +1,1 @@
-# mccordca.github.io
+Visit https://rhit-mccordca.github.io
