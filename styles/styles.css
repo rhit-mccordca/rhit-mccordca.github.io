@@ -1,12 +1,13 @@
 body{
+    font-family: "Cormorant Garamond", serif;
     background-color: black;
+    color:white;
     margin: 0;
 }
 
 header {
     text-align: center;
     background-color: #800000;
-    color: white;
 }
 
 header h1 {
@@ -15,14 +16,29 @@ header h1 {
 }
 
 header a {
-    color: white;
+    /*color: white;*/
     font-size: 1.25em;
 }
 
 nav {
     padding: 0.25em 0.25em 1.5em;
 }
+
 nav a {
     padding: 0em 1.5em;
-    text-decoration: none;
+    /*text-decoration: none;*/
+}
+
+.container{
+    margin: 1em;
+}
+
+.img-text-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
+
+}
+
+.text-block {
+    padding: 0em 1.5em;
 }
