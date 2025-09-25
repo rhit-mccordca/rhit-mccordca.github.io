@@ -3,6 +3,7 @@ body {
     background-color: black;
     color: white;
     margin: 0;
+    
 }
 
 header {
@@ -27,7 +28,7 @@ h2 {
     font-size: 1.75em;
     color: #ffa69e;
 }
-p {
+p, li {
     font-size: 1.25em;
 }
 
@@ -69,6 +70,7 @@ nav a:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 
 
 
