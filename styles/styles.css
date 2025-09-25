@@ -10,10 +10,25 @@ header {
     background-color: #800000;
 }
 
-header h1 {
-    font-size: 2.5em;
+header p {
+    font-size: 2em;
     margin: 0;
     padding: 0.50em;
+}
+
+hr {
+    width:auto;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.75em;
+    color: #ffa69e;
+}
+p {
+    font-size: 1.25em;
 }
 
 #inner-header {
@@ -50,10 +65,24 @@ nav a:focus {
     margin: 1em;
 }
 
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.resume-container * {
+    margin: unset;
+}
+
+.resume-container h1 {
+    margin: 0.5em;
+}
+
 .img-text-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
+    grid-template-columns: 1fr 2fr; /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
 
 }
 

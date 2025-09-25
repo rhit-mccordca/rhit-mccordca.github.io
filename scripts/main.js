@@ -9,8 +9,8 @@ fetch("html-parts/header.html")
 .then(header => header.text())
 .then(headerContent => {
     document.getElementById("header").innerHTML = headerContent;
-    let portfolio = document.getElementById("portfolio");
-    portfolio.addEventListener("click", accessPortfolio);});
+    //let portfolio = document.getElementById("portfolio");
+    /*portfolio.addEventListener("click", accessPortfolio);*/});
 
 
 
