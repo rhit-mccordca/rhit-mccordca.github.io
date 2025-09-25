@@ -7,4 +7,19 @@ fetch("html-parts/head.html")
 /* Adds navbar to each page */
 fetch("html-parts/header.html")
 .then(header => header.text())
-.then(headerContent => document.getElementById("header").innerHTML = headerContent);
+.then(headerContent => {
+    document.getElementById("header").innerHTML = headerContent;
+    let portfolio = document.getElementById("portfolio");
+    portfolio.addEventListener("click", accessPortfolio);});
+
+
+
+function accessPortfolio (e) {
+    e.preventDefault();
+    let answer = prompt("Page Access Key:");
+    if (answer === "carsonmccord"){
+        window.location.href = portfolio.href;
+    } else {
+        alert("Incorrect Key. Access Denied.")
+    }
+}
