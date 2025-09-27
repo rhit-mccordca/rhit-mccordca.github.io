@@ -1,11 +1,63 @@
 <html lang="en">
 
-<head id="head"></head>
+<head>
+  <title>Carson McCord</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <script src="scripts/main.js" defer></script>
+</head>
 
 <body>
   <header id="header"></header>
+  <section id="website-project" class="grid two-columns-left content-section portfolio-container">
+    <img src="/assets/website-project.png" alt="Screenshot of a page of the Website Project" id="website-picture">
+    <div>
+      <h1>Online Portfolio</h1>
+      <p class="description">This is a description</p>
+      <p>Software Used: VS Code, Github</p>
+      <p>Languages Used: HTML, CSS, JavaScript</p>
+      <p><a href="https://rhit-mccordca.github.io">View Website</a></p>
+    </div>
+  </section>
+  <section id="arcade-game-project" class="grid two-columns-right content-section portfolio-container">
+    <div>
+      <h1>Arcade Game Project</h1>
+      <p class="description">This is a description</p>
+      <p>Software Used: Eclipse, Github</p>
+      <p>Languages Used: Java</p>
+      <p><a href="https://youtu.be/UUdFPHe_gOE?si=A7ht5uqsH19_nVun">View Video Demo</a></p>
+    </div>
+    <img src="/assets/arcade-game-project.png" alt="Screenshot of Arcade Game Project being played" id="arcade-picture">
+  </section>
+  <section id="database-project" class="grid two-columns-left content-section portfolio-container">
+    <img src="/assets/database-project.png" alt="Screenshot of Database Project" id="database-picture">
+    <div>
+      <h1>Database Project</h1>
+      <p class="description">This is a description</p>
+      <p>Software Used: Pycharm, Github</p>
+      <p>Languages Used: Python</p>
+    </div>
+  </section>
+  
+  <!--This idea was not found on any page, I just found the pictures hard to see and wanted to be able to zoom in on them-->
+  <!-- Image Modals-->
+     <div id="website-modal" class="modal">
+      <img class="modal-content" src="/assets/website-project.png">
+     </div>
 
-  <script src="scripts/main.js"></script>
+     <div id="arcade-modal" class="modal">
+      <img class="modal-content" src="/assets/arcade-game-project.png">
+     </div>
+
+     <div id="database-modal" class="modal">
+      <img class="modal-content" src="/assets/database-project.png">
+     </div>
+
+  <footer id="footer"></footer>
 </body>
 
 </html>

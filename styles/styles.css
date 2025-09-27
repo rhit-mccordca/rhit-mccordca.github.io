@@ -3,18 +3,27 @@ body {
     background-color: black;
     color: white;
     margin: 0;
-    
 }
 
-header {
+
+header, footer {
     display: block;
     background-color: #800000;
 }
 
-header p {
+header p{
     font-size: 2em;
     margin: 0;
     padding: 0.50em;
+}
+
+footer p {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+img {
+    margin: 1em;
 }
 
 hr {
@@ -32,10 +41,18 @@ p, li {
     font-size: 1.25em;
 }
 
-#inner-header {
+#inner-header, #inner-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+}
+
+#inner-footer {
+    grid-template-columns: 3fr 1fr 3fr;
+}
+
+#footer-logo {
+    text-align: center;
 }
 
 header a {
@@ -44,48 +61,129 @@ header a {
     border: 1px solid white;
 }
 
-nav {
+footer a {
+    color: white;
+    font-size: 1.125em;
+
+}
+
+#header nav {
     display: flex;
     justify-content: space-evenly;
 }
 
+#footer nav {
+    padding-top: 1em;
+}
+
 nav a {
-    margin: 0em 1em;
     padding: 0em 1.5em;
     text-decoration: none;
 }
 
-nav a:hover,
-nav a:active,
-nav a:focus {
+#header nav a:hover,
+#header nav a:focus {
     background-color: white;
     color: #800000;
 }
 
-.container {
-    margin: 1em;
+#footer nav a:hover,
+#footer nav a:focus {
+    text-decoration: underline;
+}
+
+.content-section {
+    max-width: 90%;
+    margin: 1em auto;
+}
+
+.content-section-small {
+    max-width: 50%;
+    margin: 1em auto;
+}
+
+.grid {
+    display: grid;
+}
+
+p a {
+    color: white;
 }
 
 .two-columns {
-    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+.two-columns-left {
+    grid-template-columns: 4fr 6fr;
+}
 
+.two-columns-right {
+    grid-template-columns: 6fr 4fr;
+}
 
+#handshake:hover {
+    content: url("/assets/handshake_blue.png");
+}
+
+#linkedin:hover {
+    content: url("/assets/linkedin_white.png");
+}
+
+#links {
+    text-align: center;
+}
+
+.img-text-container {
+    margin: 2em auto;
+}
 
 .resume-container * {
     margin: unset;
 }
 
 .resume-container h1 {
-    margin: 0.5em;
+    margin: 0.5em auto;
 }
 
+.portfolio-container img {
+    width: 30em;
+}
+
+.portfolio-container {
+    width: 75%;
+}
+
+#arcade-game-project div {
+    text-align: right;
+}
 .img-text-container {
     display: grid;
     grid-template-columns: 1fr 2fr; /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
 
+}
+
+.portfolio-container img:hover {
+    opacity: 75%;
+}
+
+/*https://www.w3schools.com/howto/howto_css_modal_images.asp*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 5em;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
 }
 
 .text-block {
