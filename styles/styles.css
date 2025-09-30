@@ -6,12 +6,13 @@ body {
 }
 
 
-header, footer {
+header,
+footer {
     display: block;
     background-color: #800000;
 }
 
-header p{
+header p {
     font-size: 2em;
     margin: 0;
     padding: 0.50em;
@@ -27,21 +28,25 @@ img {
 }
 
 hr {
-    width:auto;
+    width: auto;
 }
 
 h1 {
     font-size: 2.5em;
 }
+
 h2 {
     font-size: 1.75em;
     color: #ffa69e;
 }
-p, li {
+
+p,
+li {
     font-size: 1.25em;
 }
 
-#inner-header, #inner-footer {
+#inner-header,
+#inner-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -65,6 +70,11 @@ footer a {
     color: white;
     font-size: 1.125em;
 
+}
+
+.plain-link {
+    text-decoration: none;
+    color: unset;
 }
 
 #header nav {
@@ -157,15 +167,48 @@ p a {
 #arcade-game-project div {
     text-align: right;
 }
+
 .img-text-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
+    grid-template-columns: 1fr 2fr;
+    /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
 
 }
 
 .portfolio-container img:hover {
     opacity: 75%;
 }
+
+#download-resume {
+    position: fixed;
+    bottom: 4vh;
+    right: 3vw;
+    margin: 0;
+    background-color: #800000;
+    border: solid 2px white;
+    border-radius: 25%;
+    text-align: center;
+}
+
+#download-resume:hover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 1em;
+    border-radius: 25px;
+}
+
+#download-resume p {
+    display: none;
+    margin: 0;
+}
+
+#download-resume:hover p {
+    display:block;
+}
+
+#download-resume img {
+    margin: 0;
+}  
 
 /*https://www.w3schools.com/howto/howto_css_modal_images.asp*/
 .modal {
